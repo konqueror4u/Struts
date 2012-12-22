@@ -7,12 +7,15 @@ import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+import org.harshini.formbean.LoginForm;
 
 public class LoginAction  extends Action{
 	public ActionForward execute(ActionMapping mapping, ActionForm form, 
 			HttpServletRequest request, HttpServletResponse response) {
 		
-				return mapping.findForward("success");
+		LoginForm loginForm = (LoginForm) form;
+		
+		return mapping.findForward("success");
 		
 	}
 
