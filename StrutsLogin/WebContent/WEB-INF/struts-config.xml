@@ -5,6 +5,8 @@
 		<form-bean name="loginForm" type="org.harshini.formbean.LoginForm"/>
 	</form-beans>
 	<action-mappings>
-		<action path="/login" type="org.harshini.action.LoginAction"></action>
+		<action path="/login" type="org.harshini.action.LoginAction" name="loginForm">
+		    <forward name="success" path="/jsp/success.jsp"></forward>
+		</action>
 	</action-mappings>
 </struts-config>
