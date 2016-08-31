@@ -14,7 +14,7 @@ public class LoginAction  extends Action{
 			HttpServletRequest request, HttpServletResponse response) {
 		
 		LoginForm loginForm = (LoginForm) form;
-		System.out.println("test2");
+		System.out.println("test3");
 		return mapping.findForward("success");
 		
 	}
