@@ -15,6 +15,7 @@ public class LoginAction  extends Action{
 		
 		LoginForm loginForm = (LoginForm) form;
 		System.out.println("test5");
+
 		return mapping.findForward("success");
 		
 	}
